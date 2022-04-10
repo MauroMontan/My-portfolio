@@ -18,7 +18,7 @@
 
 <style scoped>
 .layout {
-  background-color: white;
+  background-color: #191919;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -32,7 +32,9 @@ header {
 
 main {
   height: 100%;
-  background-color: black;
+  width: 70%;
+  margin: auto;
+  padding: 1rem;
 }
 
 footer {
