@@ -8,7 +8,7 @@ import { Header, Footer, Layout } from "./components/components";
       <Header />
     </template>
 
-    <div>hello</div>
+    <router-view />
 
     <template v-slot:footer>
       <Footer />

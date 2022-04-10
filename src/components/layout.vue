@@ -20,13 +20,14 @@
 .layout {
   background-color: white;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
   height: 4rem;
   width: 100%;
   background: #232323;
-  position: fixed;
 }
 
 main {
