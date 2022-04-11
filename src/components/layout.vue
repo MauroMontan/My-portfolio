@@ -36,14 +36,14 @@ header {
 
 main {
   height: 100%;
-  width: 70%;
+  width: 80%;
   margin: auto;
   padding: 1rem;
   overflow: auto;
 }
 
 footer {
-  width: 70%;
+  width: 80%;
   height: 2rem;
 
   margin: auto;

@@ -36,7 +36,6 @@ defineProps<{
 }
 
 .card .icon {
-  background-color: white;
   padding: 0.5rem;
   width: 20%;
 }
@@ -53,11 +52,18 @@ defineProps<{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+.about p {
+  color: #4db9b4;
+  font-size: 1.1rem;
+}
+.about h3 {
+  color: #5f8dec;
 }
 
 @media (max-width: 768px) {
-  .about {
+  .about p {
     font-size: 0.8rem;
   }
 }

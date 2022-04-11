@@ -34,7 +34,7 @@ const Menu = reactive({
 <style scoped>
 nav {
   height: 100%;
-  width: 70%;
+  width: 80%;
   margin: auto;
   display: flex;
   align-items: center;

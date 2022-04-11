@@ -71,7 +71,7 @@ h5 {
 }
 
 .frame {
-  height: 60%;
+  height: 70%;
   width: 60%;
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
   border-radius: 50%;
