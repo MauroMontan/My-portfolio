@@ -18,15 +18,17 @@ import { Header, Footer, Layout } from "./components/components";
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
+
+::-webkit-scrollbar {
+  display: none;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat Alternates", sans-serif;
   color: white;
-}
-body {
-  height: 100%;
 }
 
 #app {

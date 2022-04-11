@@ -22,6 +22,10 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+  background-image: url("../assets/background.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header {
@@ -35,10 +39,26 @@ main {
   width: 70%;
   margin: auto;
   padding: 1rem;
+  overflow: auto;
 }
 
 footer {
+  width: 70%;
   height: 2rem;
-  background-color: red;
+
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    background-image: url("../assets/mobile_bg.svg");
+  }
+  main {
+    width: 90%;
+  }
+  footer {
+    font-size: 0.8rem;
+    width: 90%;
+  }
 }
 </style>

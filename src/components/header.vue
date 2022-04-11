@@ -2,14 +2,17 @@
 <template>
   <nav>
     <div class="title">
-      <h2>Mauro <b>Montaño</b></h2>
+      <i class="fa-solid fa-house"></i>
     </div>
 
+    <div class="burguer">
+      <i class="fa-solid fa-burger"></i>
+    </div>
     <div class="links">
       <ul>
-        <li>Home</li>
-        <li>About me</li>
+        <li><router-link to="/about"> About me </router-link></li>
         <li>Projects</li>
+        <li>Contact me</li>
       </ul>
     </div>
   </nav>
@@ -26,9 +29,17 @@ nav {
   justify-content: space-between;
 }
 
+i {
+  color: #41b883;
+}
+
+.burguer {
+  display: none;
+}
+
 .links {
   height: 100%;
-  width: 20rem;
+  width: 25rem;
 }
 .links ul {
   display: flex;
@@ -40,5 +51,18 @@ nav {
 .links ul li {
   list-style: none;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  nav {
+    width: 90%;
+  }
+
+  .links {
+    display: none;
+  }
+  .burguer {
+    display: flex;
+  }
 }
 </style>
