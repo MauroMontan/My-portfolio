@@ -1,4 +1,15 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { reactive } from "vue";
+
+const Menu = reactive({
+  links: [
+    { to: "/about", name: "About me" },
+    { to: "/skills", name: "Skills" },
+    { to: "/about", name: "Projects" },
+    { to: "/about", name: "Contact me" },
+  ],
+});
+</script>
 <template>
   <nav>
     <div class="title">
@@ -12,9 +23,9 @@
     </div>
     <div class="links">
       <ul>
-        <li><router-link to="/about"> About me </router-link></li>
-        <li>Projects</li>
-        <li>Contact me</li>
+        <li v-for="link in Menu.links">
+          <router-link :to="link.to"> {{ link.name }} </router-link>
+        </li>
       </ul>
     </div>
   </nav>
@@ -54,6 +65,15 @@ i {
 .links ul li {
   list-style: none;
   cursor: pointer;
+}
+
+.links ul li a:hover {
+  color: #41b883;
+  font-weight: bold;
+}
+
+.links ul li a {
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {

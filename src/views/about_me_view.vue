@@ -6,6 +6,14 @@
       <div class="frame">
         <img src="../assets/about_avatar.svg" alt="about avatar" />
       </div>
+      <div class="quote">
+        <p>
+          <i class="fa-solid fa-quote-left"></i> Estudiar no es un acto de
+          consumir ideas, sino de crearlas y recrearlas.
+          <i class="fa-solid fa-quote-right"></i>
+        </p>
+        <h5>- Benito Taibo</h5>
+      </div>
     </div>
     <div class="content">
       <p>
@@ -32,17 +40,40 @@
   justify-content: space-between;
 }
 
+hr {
+  margin-bottom: 1rem;
+}
+
 .photo {
   height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+
+.quote {
+  position: absolute;
+  background-color: #232323;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  bottom: 3rem;
+  line-height: 1.2rem;
+  left: 0;
+
+  width: 60%;
+}
+
+h5 {
+  text-align: end;
 }
 
 .frame {
   height: 60%;
   width: 60%;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
   border-radius: 50%;
   border: solid 0.5rem #41b883;
   overflow: hidden;
@@ -60,6 +91,7 @@
   padding: 1rem;
   width: 100%;
   border-radius: 0.5rem;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
   text-align: justify;
   line-height: 2rem;
 }
@@ -81,6 +113,15 @@
   }
   .content {
     line-height: 1.5rem;
+    font-size: 0.9rem;
+  }
+  .quote {
+    left: unset;
+    bottom: -1rem;
+    width: 60%;
+    right: 0;
+    font-size: 0.7rem;
+    padding: 0.5rem;
   }
 }
 </style>
