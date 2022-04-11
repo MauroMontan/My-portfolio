@@ -11,7 +11,23 @@ import { InfoCard } from "../components/components";
         <h4>Hello! I am</h4>
         <h1>Mauro Montaño</h1>
 
-        <h3>I am a full stack developer.</h3>
+        <h3>a full stack developer.</h3>
+        <div class="social">
+          <i>
+            <a
+              class="fa-brands fa-github"
+              href="https://github.com/MauroMontan"
+              target="_blank"
+            ></a>
+          </i>
+          <i>
+            <a
+              class="fa-brands fa-instagram"
+              href="https://www.instagram.com/mauro_montano_/"
+              target="_blank"
+            ></a>
+          </i>
+        </div>
       </div>
     </div>
 
@@ -27,6 +43,25 @@ import { InfoCard } from "../components/components";
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(2, 1fr);
+}
+
+.social {
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.social i {
+  font-size: 1.5rem;
+  margin-right: 2rem;
+}
+
+.social i a {
+  text-decoration: none;
+}
+
+.social i a:hover {
+  color: #41b883;
 }
 
 .content {
