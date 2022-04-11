@@ -2,7 +2,9 @@
 <template>
   <nav>
     <div class="title">
-      <i class="fa-solid fa-house"></i>
+      <router-link to="/">
+        <i class="home fa-solid fa-house"></i>
+      </router-link>
     </div>
 
     <div class="burguer">
@@ -31,6 +33,7 @@ nav {
 
 i {
   color: #41b883;
+  font-size: 1.5rem;
 }
 
 .burguer {
@@ -63,6 +66,9 @@ i {
   }
   .burguer {
     display: flex;
+  }
+  .home {
+    color: #191919;
   }
 }
 </style>

@@ -60,5 +60,8 @@ footer {
     font-size: 0.8rem;
     width: 90%;
   }
+  header {
+    background-color: transparent;
+  }
 }
 </style>

@@ -18,7 +18,7 @@
 </template>
 <style scoped>
 .code {
-  width: 80%;
+  width: 85%;
   border-radius: 1rem;
   position: relative;
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
