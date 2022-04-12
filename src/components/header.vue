@@ -5,7 +5,7 @@ const Menu = reactive({
   links: [
     { to: "/about", name: "About me" },
     { to: "/skills", name: "Skills" },
-    { to: "/about", name: "Projects" },
+    { to: "/projects", name: "Projects" },
     { to: "/about", name: "Contact me" },
   ],
 });

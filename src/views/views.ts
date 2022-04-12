@@ -3,4 +3,5 @@
 import Home from "./home_view.vue";
 import About from "./about_me_view.vue";
 import Skills from "./skill_view.vue";
-export { Home, About, Skills };
+import Projects from "./projects_view.vue";
+export { Home, About, Skills, Projects };
