@@ -6,7 +6,7 @@ const Menu = reactive({
     { to: "/about", name: "About me" },
     { to: "/skills", name: "Skills" },
     { to: "/projects", name: "Projects" },
-    { to: "/about", name: "Contact me" },
+    { to: "/contact", name: "Contact me" },
   ],
 });
 </script>

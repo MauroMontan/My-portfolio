@@ -29,6 +29,7 @@
   border-radius: 0.5rem;
   padding: 1rem;
   display: flex;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
   justify-content: space-between;
   flex-direction: column;
 }
@@ -65,6 +66,8 @@
   font-size: 0.9rem;
   background-color: #41b883;
   width: min-content;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
+
   padding: 0.3rem;
   border-radius: 0.4rem;
 }
