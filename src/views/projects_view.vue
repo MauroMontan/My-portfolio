@@ -1,9 +1,17 @@
 <script setup lang="ts">
+import { computed } from "vue";
 import { ProjectCard } from "../components/components";
+import { useProjects } from "../store";
+
+const projectsStore = useProjects();
+
+const projects = computed(() => {
+  return projectsStore.projectss;
+});
 </script>
 <template>
   <div class="grid">
-    <ProjectCard v-for="i in 12" />
+    <ProjectCard v-for="project in projects" :project="project" />
   </div>
 </template>
 

@@ -1,23 +1,38 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { Project } from "../interfaces/interfaces";
+
+defineProps<{
+  project: Project;
+}>();
+</script>
 
 <template>
   <div class="card">
     <div class="toolbar">
-      <h2>flutter movie app</h2>
+      <h2>{{ project.name }}</h2>
 
       <div class="actions">
-        <i class="fa-brands fa-github"></i>
-        <i class="fa-solid fa-square-arrow-up-right"></i>
+        <a
+          :href="project.repository"
+          target="_blank"
+          class="fa-brands fa-github"
+        />
+
+        <a
+          :href="project.link"
+          target="_blank"
+          class="fa-solid fa-square-arrow-up-right"
+        ></a>
       </div>
     </div>
 
     <div class="content">
-      <p>eirmod tempor invidunt ut labore e est Lorem ipsum dolor sit amet.</p>
+      <p>{{ project.description }}</p>
     </div>
 
     <div class="tags">
-      <div class="tag" v-for="i in 3">
-        <h5>Typescript</h5>
+      <div class="tag" v-for="tag in project.tags">
+        <h5>{{ tag.name }}</h5>
       </div>
     </div>
   </div>
@@ -63,13 +78,20 @@
 }
 
 .tags .tag {
-  font-size: 0.9rem;
+  font-size: 1rem;
   background-color: #41b883;
   width: min-content;
-  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
-
-  padding: 0.3rem;
+  padding: 0.4rem;
   border-radius: 0.4rem;
+}
+
+.actions a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.actions a:hover {
+  color: #41b883;
 }
 
 .toolbar h2 {
