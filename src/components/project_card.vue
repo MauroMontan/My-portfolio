@@ -1,9 +1,18 @@
 <script setup lang="ts">
+import { computed } from "vue";
 import { Project } from "../interfaces/interfaces";
 
-defineProps<{
+const props = defineProps<{
   project: Project;
 }>();
+
+const hasLink = computed(() => {
+  if (!props.project.link) {
+    return false;
+  } else {
+    return true;
+  }
+});
 </script>
 
 <template>
@@ -19,6 +28,7 @@ defineProps<{
         />
 
         <a
+          v-if="hasLink"
           :href="project.link"
           target="_blank"
           class="fa-solid fa-square-arrow-up-right"
@@ -67,7 +77,7 @@ defineProps<{
   height: 100%;
   display: flex;
   align-items: center;
-  width: 20%;
+  width: fit-contentt;
   justify-content: space-between;
   font-size: 1.3rem;
 }
@@ -88,6 +98,9 @@ defineProps<{
 .actions a {
   text-decoration: none;
   cursor: pointer;
+}
+.actions a:first-child {
+  margin-right: 1rem;
 }
 
 .actions a:hover {
