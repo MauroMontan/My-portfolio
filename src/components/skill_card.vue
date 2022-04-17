@@ -33,6 +33,12 @@ defineProps<{
   width: 100%;
   overflow: hidden;
   border-radius: 0.5rem;
+  transition: all 0.5s ease-out;
+  user-select: none;
+}
+
+.card:hover {
+  transform: translateX(-1rem);
 }
 
 .card .icon {

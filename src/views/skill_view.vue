@@ -100,7 +100,7 @@ const skills = reactive({
   right: -1rem;
   background-color: #4db9b4;
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
-
+  z-index: 3;
   padding: 0.3rem;
   border-radius: 0.5rem;
 }

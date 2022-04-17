@@ -60,12 +60,11 @@ hr {
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
   padding: 1rem;
   border-radius: 0.5rem;
-  bottom: 6rem;
+  bottom: 5rem;
   line-height: 1.2rem;
-  left: 1rem;
+  left: 2rem;
   width: 60%;
   transition: all 0.3s ease-out;
-  transform: rotate(5deg);
 }
 
 .quote:hover {
