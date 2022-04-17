@@ -53,7 +53,7 @@ button {
   font-size: 1.1rem;
   left: -2rem;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
-  transition: all ease-in 0.4s;
+  transition: all 1s ease-out;
 }
 
 b {
@@ -64,7 +64,7 @@ i {
 }
 
 button:active {
-  transform: scale(130%);
+  transform: scale(110%);
 }
 
 button:hover {

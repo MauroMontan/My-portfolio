@@ -66,11 +66,7 @@ const useProjects = defineStore("projects", {
   getters: {
     projectss: (state) => state.projects,
   },
-  actions: {
-    sayHi() {
-      console.log("hello");
-    },
-  },
+  actions: {},
 });
 
 export default useProjects;

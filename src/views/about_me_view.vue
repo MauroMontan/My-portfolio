@@ -54,16 +54,22 @@ hr {
 }
 
 .quote {
+  user-select: none;
   position: absolute;
   background-color: #232323;
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
   padding: 1rem;
   border-radius: 0.5rem;
-  bottom: 3rem;
+  bottom: 6rem;
   line-height: 1.2rem;
-  left: 0;
-
+  left: 1rem;
   width: 60%;
+  transition: all 0.3s ease-out;
+  transform: rotate(5deg);
+}
+
+.quote:hover {
+  transform: scale(105%);
 }
 
 h5 {
@@ -71,7 +77,7 @@ h5 {
 }
 
 .frame {
-  height: 70%;
+  height: 60%;
   width: 60%;
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
   border-radius: 50%;
@@ -94,7 +100,13 @@ h5 {
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
   text-align: justify;
   line-height: 2rem;
+  transition: all 1s ease;
 }
+
+.content:hover {
+  transform: scale(103%);
+}
+
 .content p {
   font-weight: 700;
   background-image: -webkit-linear-gradient(30deg, #85ffbd 0%, #fffb7d 100%);
