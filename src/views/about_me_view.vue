@@ -16,6 +16,7 @@
       </div>
     </div>
     <div class="content">
+      <h1>Read something about me !</h1>
       <p>
         Hi, I´m Mauro Montaño, a self-taught full-stack developer and linux user
         from México . i have been developing software since 2020, im fascinated
@@ -38,6 +39,11 @@
   align-items: center;
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  color: #4db9b4;
 }
 
 hr {

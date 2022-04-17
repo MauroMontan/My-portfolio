@@ -63,7 +63,7 @@ const contactMe = async (): Promise<void> => {
   padding: 1rem;
   display: flex;
   width: 100%;
-  height: 100%;
+  height: 90%;
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
   flex-direction: column;
   align-items: center;

@@ -22,6 +22,7 @@
   border-radius: 1rem;
   position: relative;
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
+  animation: all 1s ease;
 }
 
 small {

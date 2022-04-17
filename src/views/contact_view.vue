@@ -29,6 +29,13 @@ import { ContactForm } from "../components/components";
   width: 100%;
   height: 100%;
 }
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (max-width: 768px) {
   .container {
     display: flex;
