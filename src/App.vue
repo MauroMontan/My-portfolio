@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import { Header, Footer, Layout } from "./components/components";
+import { Header, Footer, Layout, Drawer } from "./components/components";
 </script>
 
 <template>
+  <Drawer />
   <Layout>
     <template v-slot:header>
       <Header />

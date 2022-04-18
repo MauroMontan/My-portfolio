@@ -125,8 +125,8 @@ h5 {
     grid-template-columns: repeat(1, 1fr);
   }
   .frame {
-    width: 50%;
-    height: 70%;
+    width: 70%;
+    height: 90%;
   }
   .content {
     line-height: 1.5rem;
@@ -134,11 +134,14 @@ h5 {
   }
   .quote {
     left: unset;
-    bottom: -1rem;
-    width: 60%;
+    bottom: 0rem;
+    width: 70%;
     right: 0;
     font-size: 0.7rem;
     padding: 0.5rem;
+  }
+  h1 {
+    font-size: 1rem;
   }
 }
 </style>

@@ -119,4 +119,13 @@ const hasLink = computed(() => {
 .tags .tag h5 {
   color: #191919;
 }
+
+@media (max-width: 768px) {
+  .tags {
+    gap: 0.8rem;
+  }
+  .tags .tag h5 {
+    font-size: 0.7rem;
+  }
+}
 </style>

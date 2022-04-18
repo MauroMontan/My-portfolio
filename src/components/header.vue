@@ -1,13 +1,11 @@
 <script setup lang="ts">
-import { reactive } from "vue";
+import { computed } from "vue";
+import { useUi } from "../store";
 
-const Menu = reactive({
-  links: [
-    { to: "/about", name: "About me" },
-    { to: "/skills", name: "Skills" },
-    { to: "/projects", name: "Projects" },
-    { to: "/contact", name: "Contact me" },
-  ],
+const uiStore = useUi();
+
+const Menu = computed(() => {
+  return uiStore.navigationLinks;
 });
 </script>
 <template>
@@ -19,11 +17,11 @@ const Menu = reactive({
     </div>
 
     <div class="burguer">
-      <i class="fa-solid fa-burger"></i>
+      <i @click="uiStore.toggleDrawer" class="fa-solid fa-burger"></i>
     </div>
     <div class="links">
       <ul>
-        <li v-for="link in Menu.links">
+        <li v-for="link in Menu">
           <router-link :to="link.to"> {{ link.name }} </router-link>
         </li>
       </ul>
