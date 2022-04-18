@@ -90,4 +90,8 @@ ul li:active {
   transform: translateX(30px);
   opacity: 0;
 }
+/* delay enter of nested element for staggered effect */
+.nested-enter-active .inner {
+  transition-delay: 0.1s;
+}
 </style>
