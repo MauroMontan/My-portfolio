@@ -127,4 +127,10 @@ button {
   font-weight: bold;
   font-size: 1.2rem;
 }
+
+@media (max-width: 768px) {
+  input {
+    font-size: 0.9rem;
+  }
+}
 </style>

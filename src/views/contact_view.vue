@@ -46,5 +46,9 @@ import { ContactForm } from "../components/components";
   .banner {
     display: none;
   }
+  .form {
+    height: 100%;
+    font-size: 0.9rem;
+  }
 }
 </style>
