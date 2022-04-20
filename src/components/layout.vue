@@ -38,6 +38,9 @@ main {
   height: 100%;
   width: 80%;
   margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 1rem;
   overflow: auto;
 }
@@ -55,6 +58,8 @@ footer {
   }
   main {
     width: 90%;
+    align-items: unset;
+    justify-content: unset;
   }
   footer {
     font-size: 0.8rem;

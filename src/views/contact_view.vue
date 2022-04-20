@@ -38,7 +38,10 @@ import { ContactForm } from "../components/components";
 
 @media (max-width: 768px) {
   .container {
+    width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .banner {
     display: none;

@@ -6,6 +6,18 @@
       <div class="frame">
         <img src="../assets/about_avatar.svg" alt="about avatar" />
       </div>
+
+      <div class="playlist">
+        <a
+          href="https://open.spotify.com/playlist/4GMmj6OUdJ2B7vOX9fSD14?si=81dba72063684028"
+          class="fa-solid fa-music"
+        ></a>
+      </div>
+
+      <div class="music-message">
+        <img src="../assets/musicMessage.png" alt="music message" />
+      </div>
+
       <div class="quote">
         <p>
           <i class="fa-solid fa-quote-left"></i> Estudiar no es un acto de
@@ -46,6 +58,24 @@ h1 {
   color: #4db9b4;
 }
 
+.music-message {
+  position: absolute;
+  top: -1.4rem;
+  right: 0rem;
+}
+.music-message img {
+  user-select: none;
+  -moz-user-select: none;
+
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  width: 100%;
+  height: 100%;
+}
+
 hr {
   margin-bottom: 1rem;
 }
@@ -66,11 +96,32 @@ hr {
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
   padding: 1rem;
   border-radius: 0.5rem;
-  bottom: 5rem;
+  bottom: 6rem;
   line-height: 1.2rem;
   left: 2rem;
   width: 60%;
   transition: all 0.3s ease-out;
+}
+
+.playlist {
+  background-color: #5865f2;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
+
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 50%;
+  display: flex;
+  position: absolute;
+  top: 10rem;
+  right: 8rem;
+}
+
+.playlist a {
+  text-decoration: none;
+}
+
+.playlist:hover {
+  background-color: #1ecc5c;
 }
 
 .quote:hover {
@@ -82,12 +133,13 @@ h5 {
 }
 
 .frame {
-  height: 60%;
-  width: 60%;
+  height: 50%;
+  width: 50%;
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
   border-radius: 50%;
   border: solid 0.5rem #41b883;
   overflow: hidden;
+  display: flex;
 }
 
 .frame img {
@@ -109,7 +161,7 @@ h5 {
 }
 
 .content:hover {
-  transform: scale(103%);
+  transform: scale(101%);
 }
 
 .content p {
@@ -142,6 +194,15 @@ h5 {
   }
   h1 {
     font-size: 1rem;
+  }
+  .playlist {
+    top: 2rem;
+    right: unset;
+    left: 2.5rem;
+    font-size: 1rem;
+  }
+  .music-message {
+    display: none;
   }
 }
 </style>
