@@ -3,42 +3,42 @@ import { Header, Footer, Layout, Drawer } from "./components/components";
 </script>
 
 <template>
-  <Drawer />
-  <Layout>
-    <template v-slot:header>
-      <Header />
-    </template>
+    <Drawer />
+    <Layout>
+        <template v-slot:header>
+            <Header />
+        </template>
 
-    <router-view v-slot="{ Component }">
-      <Transition name="slide-fade" mode="out-in">
-        <component :is="Component" />
-      </Transition>
-    </router-view>
+        <router-view v-slot="{ Component }">
+            <Transition name="slide-fade" mode="out-in">
+                <component :is="Component" />
+            </Transition>
+        </router-view>
 
-    <template v-slot:footer>
-      <Footer />
-    </template>
-  </Layout>
+        <template v-slot:footer>
+            <Footer />
+        </template>
+    </Layout>
 </template>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
 
 ::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat Alternates", sans-serif;
-  color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+    color: white;
 }
 
 #app {
-  background-color: blue;
-  height: 100vh;
+    background-color: blue;
+    height: 100vh;
 }
 
 /*
@@ -46,16 +46,16 @@ import { Header, Footer, Layout, Drawer } from "./components/components";
   durations and timing functions.
 */
 .slide-fade-enter-active {
-  transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
 }
 
 .slide-fade-leave-active {
-  transition: all 0.2s cubic-bezier(1, 0.5, 0.8, 1);
+    transition: all 0.2s cubic-bezier(1, 0.5, 0.8, 1);
 }
 
 .slide-fade-enter-from,
 .slide-fade-leave-to {
-  transform: translateX(20px);
-  opacity: 0;
+    transform: translateX(20px);
+    opacity: 0;
 }
 </style>
