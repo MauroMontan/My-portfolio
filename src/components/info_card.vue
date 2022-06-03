@@ -43,7 +43,7 @@ pre {
 
 .code pre code {
     font-weight: bold;
-    line-height: 1.5;
+    line-height: 2;
     font-family: 'Source Code Pro', monospace;
 }
 
@@ -83,6 +83,11 @@ a:hover {
         width: 100%;
     }
 
+    .code pre code {
+
+        font-size: 0.6rem;
+    }
+
     a {
         left: unset;
         bottom: unset;
@@ -91,6 +96,7 @@ a:hover {
     }
 
     pre {
+        font-size: 0.8rem;
         font-size: 0.8rem;
     }
 }

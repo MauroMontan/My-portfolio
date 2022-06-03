@@ -5,7 +5,7 @@ import { InfoCard } from "../components/components";
 <template>
     <div class="container">
         <div class="content">
-            <img src="../assets/avatar.svg" alt="avatar picture" />
+            <img src="../assets/avatar.svg" alt="" />
 
             <div class="intro">
                 <h4>Hello! I am</h4>
@@ -91,18 +91,17 @@ img {
 .info {
     display: flex;
     align-items: center;
-    padding: 2rem;
     justify-content: end;
 }
 
 @media (max-width: 768px) {
     .container {
+        font-size: 0.8rem;
         grid-template-columns: repeat(1, 1fr);
     }
 
     .info {
         justify-content: center;
-        padding: unset;
     }
 
     .content h1 {
