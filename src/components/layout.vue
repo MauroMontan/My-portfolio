@@ -18,31 +18,29 @@
 
 <style scoped>
 .layout {
-    background-color: #191919;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    background-image: url("../assets/background.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 header {
+    margin: auto;
     height: 4rem;
     width: 100%;
-    background: #232323;
 }
 
 main {
     height: 100%;
-    width: 80%;
+    width: 90%;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 1rem;
-    overflow: auto;
 }
 
 footer {
@@ -53,14 +51,15 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .layout {
-        background-image: url("../assets/mobile_bg.svg");
+    .layout{
+        height: 100%;
     }
-
     main {
         width: 100%;
         align-items: unset;
         justify-content: unset;
+        height: fit-content;
+        margin-bottom: 1rem;
     }
 
     footer {

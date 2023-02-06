@@ -54,14 +54,13 @@ const hasLink = computed(() => {
   border-radius: 0.5rem;
   padding: 1rem;
   display: flex;
-  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
   justify-content: space-between;
   flex-direction: column;
   transition: all 0.3s ease-in-out;
 }
 
 .card:hover {
-  transform: translateY(-1rem);
+  transform: translateY(-0.1rem);
 }
 
 .content {

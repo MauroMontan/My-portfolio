@@ -13,17 +13,15 @@ const skills = computed(() => {
 <template>
   <div>
     <div class="page-title">
-      <h2>Take a look of my principal skills</h2>
+      <h2>Take a look at my core skills</h2>
     </div>
     <div class="skills">
       <div class="content backend-info">
-        <div class="title">
-          <h2>Back-end skills</h2>
-        </div>
+   
         <SkillCard v-for="skill in skills.backend" :skill="skill" />
       </div>
       <div class="content fronted-info">
-        <div class="title"><h2>Front-end Skills</h2></div>
+       
         <SkillCard v-for="skill in skills.fronted" :skill="skill" />
       </div>
     </div>
@@ -36,13 +34,13 @@ const skills = computed(() => {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  gap: 1rem;
 }
 .content {
   display: flex;
   height: 100%;
   width: 100%;
-  gap: 0.8rem;
+  gap: 1rem;
   position: relative;
   border-radius: 0.5rem;
   flex-direction: column;

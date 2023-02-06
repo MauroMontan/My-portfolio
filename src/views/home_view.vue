@@ -34,7 +34,8 @@ import { InfoCard } from "../components/components";
 .container {
     height: 100%;
     display: grid;
-    gap: 2rem;
+    gap: 4rem;
+    padding: 1rem;
     grid-template-columns: repeat(2, 1fr);
 }
 
@@ -89,15 +90,18 @@ img {
 }
 
 .info {
+    margin: auto;
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content:center;
 }
 
 @media (max-width: 768px) {
     .container {
+        width: 100%;
         font-size: 0.8rem;
         grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
     }
 
     .info {

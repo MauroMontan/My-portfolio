@@ -5,20 +5,7 @@
     <div class="photo">
       <div class="frame">
         <img src="../assets/about_avatar.svg" alt="about avatar" />
-      </div>
-
-      <div class="playlist">
-        <a
-          href="https://open.spotify.com/playlist/4GMmj6OUdJ2B7vOX9fSD14?si=81dba72063684028"
-          class="fa-solid fa-music"
-        ></a>
-      </div>
-
-      <div class="music-message">
-        <img src="../assets/musicMessage.png" alt="music message" />
-      </div>
-
-      <div class="quote">
+        <div class="quote">
         <p>
           <i class="fa-solid fa-quote-left"></i> Estudiar no es un acto de
           consumir ideas, sino de crearlas y recrearlas.
@@ -26,6 +13,21 @@
         </p>
         <h5>- Benito Taibo</h5>
       </div>
+      <div class="music-message">
+        <img src="../assets/musicMessage.png" alt="music message" />
+      </div>
+      <div class="playlist">
+        <a
+          href="https://open.spotify.com/playlist/4GMmj6OUdJ2B7vOX9fSD14?si=81dba72063684028"
+          class="fa-solid fa-music"
+          target="_blank"
+        ></a>
+      </div>
+      </div>
+
+     
+
+     
     </div>
     <div class="content">
       <h1>Read something about me !</h1>
@@ -60,8 +62,8 @@ h1 {
 
 .music-message {
   position: absolute;
-  top: -1.4rem;
-  right: 0rem;
+  top: -10rem;
+  right: 5rem;
 }
 .music-message img {
   user-select: none;
@@ -86,34 +88,32 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 
 .quote {
   user-select: none;
-  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position:absolute;
+  width:100%;
   background-color: #232323;
-  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
   padding: 1rem;
   border-radius: 0.5rem;
-  bottom: 6rem;
+  bottom:-4rem;
   line-height: 1.2rem;
-  left: 2rem;
-  width: 60%;
-  transition: all 0.3s ease-out;
+  left: 0;
 }
 
 .playlist {
   background-color: #5865f2;
-  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
-
   font-size: 2rem;
   padding: 1rem;
   border-radius: 50%;
   display: flex;
   position: absolute;
-  top: 10rem;
-  right: 8rem;
+  top:1rem;
+  left:0;
 }
 
 .playlist a {
@@ -124,22 +124,17 @@ hr {
   background-color: #1ecc5c;
 }
 
-.quote:hover {
-  transform: scale(105%);
-}
 
 h5 {
   text-align: end;
 }
 
 .frame {
-  height: 50%;
-  width: 50%;
-  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
+  aspect-ratio: 1 / 1;
   border-radius: 50%;
   border: solid 0.5rem #41b883;
-  overflow: hidden;
   display: flex;
+  position: relative;
 }
 
 .frame img {
@@ -151,17 +146,12 @@ h5 {
 
 .content {
   background-color: #232323;
-  padding: 1rem;
+  padding:2rem;
   width: 100%;
   border-radius: 0.5rem;
-  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
   text-align: justify;
   line-height: 2rem;
   transition: all 1s ease;
-}
-
-.content:hover {
-  transform: scale(101%);
 }
 
 .content p {
@@ -175,19 +165,17 @@ h5 {
 @media (max-width: 768px) {
   .about {
     grid-template-columns: repeat(1, 1fr);
+    gap: 4rem;
   }
-  .frame {
-    width: 70%;
-    height: 90%;
-  }
+
   .content {
     line-height: 1.5rem;
     font-size: 0.9rem;
   }
   .quote {
     left: unset;
-    bottom: 0rem;
-    width: 70%;
+    bottom: -1rem;
+    width: 100%;
     right: 0;
     font-size: 0.7rem;
     padding: 0.5rem;
@@ -196,10 +184,10 @@ h5 {
     font-size: 1rem;
   }
   .playlist {
-    top: 2rem;
-    right: unset;
-    left: 2.5rem;
-    font-size: 1rem;
+    top: 1rem;
+    left: unset;
+    right:0rem;
+    font-size: 1.5rem;
   }
   .music-message {
     display: none;

@@ -49,7 +49,6 @@ const contactMe = async (): Promise<void> => {
     display: flex;
     width: 100%;
     height: 90%;
-    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -107,7 +106,6 @@ button {
     border-radius: 0.5rem;
     outline: none;
     border: none;
-    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
 
     font-weight: bold;
     font-size: 1.2rem;

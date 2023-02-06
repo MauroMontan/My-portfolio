@@ -7,7 +7,7 @@
       <small> about_me.json </small>
   <i>1 </i>   { 
   <i>2 </i>     <b>'name'</b> : 'Mauro Montaño', 
-  <i>3 </i>     <b>'age'</b> : 21, 
+  <i>3 </i>     <b>'age'</b> : 22, 
   <i>4 </i>     <b>'Pronouns'</b> : ['He' , 'Him',], 
   <i>5 </i>     <b>'what_i_love'</b> : ['Vue' , 'Flutter','Fastapi' ], 
   <i>6 </i>   }
@@ -24,7 +24,6 @@
     width: 100%;
     border-radius: 0.5rem;
     position: relative;
-    animation: all 1s ease;
 }
 
 small {

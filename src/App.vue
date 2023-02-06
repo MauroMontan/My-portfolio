@@ -22,7 +22,8 @@ import { Header, Footer, Layout, Drawer } from "./components/components";
 </template>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 ::-webkit-scrollbar {
     display: none;
@@ -32,13 +33,17 @@ import { Header, Footer, Layout, Drawer } from "./components/components";
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Fredoka', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: white;
+}
+body{
+    
+    background-color: #191919;
 }
 
 #app {
-    background-color: blue;
     height: 100vh;
+    
 }
 
 /*

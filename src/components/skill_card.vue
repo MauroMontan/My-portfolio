@@ -26,8 +26,7 @@ defineProps<{
 
 <style scoped>
 .card {
-    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
-    height: 8rem;
+    height: 9rem;
     background-color: #232323;
     display: flex;
     width: 100%;
@@ -37,9 +36,7 @@ defineProps<{
     user-select: none;
 }
 
-.card:hover {
-    transform: translateX(-1rem);
-}
+
 
 .card .icon {
     padding: 0.5rem;
