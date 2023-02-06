@@ -112,6 +112,7 @@ button {
 }
 
 @media (max-width: 768px) {
+   
     input {
         font-size: 0.9rem;
     }

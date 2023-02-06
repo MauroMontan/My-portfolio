@@ -37,13 +37,11 @@ import { Header, Footer, Layout, Drawer } from "./components/components";
     color: white;
 }
 body{
-    
     background-color: #191919;
 }
 
 #app {
     height: 100vh;
-    
 }
 
 /*

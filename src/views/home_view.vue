@@ -61,9 +61,8 @@ import { InfoCard } from "../components/components";
 
 .content {
     display: flex;
-    align-items: center;
-
-    justify-content: center;
+    align-items:center;
+    justify-content:space-between;
 }
 
 .content .intro {
@@ -92,19 +91,22 @@ img {
 .info {
     margin: auto;
     display: flex;
-    align-items: center;
-    justify-content:center;
 }
 
 @media (max-width: 768px) {
     .container {
+        height: 70vh;
         width: 100%;
         font-size: 0.8rem;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap:unset;
+        padding: unset;
     }
 
     .info {
+        margin: auto;
+    
         justify-content: center;
     }
 

@@ -88,8 +88,5 @@ i {
         display: flex;
     }
 
-    .home {
-        color: #191919;
-    }
 }
 </style>

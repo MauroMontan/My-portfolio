@@ -18,13 +18,10 @@
 
 <style scoped>
 .layout {
-    height: 100%;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 header {
@@ -36,11 +33,11 @@ header {
 main {
     height: 100%;
     width: 90%;
+    padding: 1rem;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
 }
 
 footer {
@@ -52,14 +49,17 @@ footer {
 
 @media (max-width: 768px) {
     .layout{
-        height: 100%;
+        height: 100vh;
+        width: 100%;
     }
     main {
         width: 100%;
+        height: 100%;
         align-items: unset;
         justify-content: unset;
         height: fit-content;
-        margin-bottom: 1rem;
+        margin-bottom: 3rem;
+
     }
 
     footer {
@@ -67,8 +67,5 @@ footer {
         width: 90%;
     }
 
-    header {
-        background-color: transparent;
-    }
 }
 </style>
